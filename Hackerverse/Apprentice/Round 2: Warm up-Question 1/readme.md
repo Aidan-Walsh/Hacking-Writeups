@@ -1,0 +1,7 @@
+- This challenge is very simply just password cracking a password-protected zip.
+- This requires a tool to do so, I used John-The-Ripper PK2ZIP to first obtain a hash of the required password and then the basic cracker to reverse the hash using John-The-Ripper's basic passwordlist
+- The following commands below were used:
+- ```./zip2john ../../p1.zip > p1hash```
+- ```./john --wordlist=password.lst p1hash```
+- This gave us the password "tomatoes"
+- We could then unzip the file, and open the file containing the flag
