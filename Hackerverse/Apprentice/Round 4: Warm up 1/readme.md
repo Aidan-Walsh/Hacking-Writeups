@@ -10,4 +10,4 @@
 - Due to the associativity of xor, we can reverse this function in java to solve for the password that we need. The snippet below shows this code
 -  <img width="689" alt="Screenshot 2025-06-30 at 3 18 26 PM" src="https://github.com/user-attachments/assets/503d02aa-4b67-4987-ba8a-a6a8b2520064" />
 - When we run this code, we get the following output: 
-<img width="262" alt="Screenshot 2025-06-30 at 3 19 08 PM" src="https://github.com/user-attachments/assets/dd0bd0e3-ef95-495e-8533-a9c0baffbf0b" />
+- <img width="262" alt="Screenshot 2025-06-30 at 3 19 08 PM" src="https://github.com/user-attachments/assets/dd0bd0e3-ef95-495e-8533-a9c0baffbf0b" />
