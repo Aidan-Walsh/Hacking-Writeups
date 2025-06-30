@@ -1,0 +1,3 @@
+- The given ciphertext is "jvmve kyivv wfli qvif wzmv vzxyk knf fev jzo wfli"
+- This only contains the regular alphabet and seems to be formatted similarly to actualy text, with just the characters shuffled around
+- This is indicative of a caesar cipher. If we shift the text using an online shifter, and shift by 17, we get the following: "seven three four zero five eight two one six four"
