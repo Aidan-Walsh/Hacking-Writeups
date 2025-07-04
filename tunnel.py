@@ -60,10 +60,12 @@ while True:
         executable.sendline(item) 
         print("balls")
         output = executable.readline()
-        print("balls 1" + str(output))
-        executable.readline()
-        print("balls 2")
         output = str(output)
+        print("balls 1" + str(output))
+        if "Cannot move that way" in output:
+          executable.readline()
+        print("balls 2")
+        
         print("output: " + output + " with input: " + item)
         if not("Cannot move that way" in output):
           found_route = True
