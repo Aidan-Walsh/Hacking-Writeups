@@ -38,7 +38,8 @@ while True:
       # should not happen
       index = 5
     potential = potential[:-1] # remove the last char
-    previous_move = potential[len(potential) - 1]
+    if len(potential) > 0:
+      previous_move = potential[len(potential) - 1]
       
       
     for character in potential:
@@ -68,6 +69,7 @@ while True:
         else: 
           if item == "B":
             restarting = True
+            executable.sendline("Q")
     else:
       if index == ind:
         index = -1
