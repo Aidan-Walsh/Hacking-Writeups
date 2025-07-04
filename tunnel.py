@@ -59,7 +59,7 @@ while True:
         output = str(output)
         print("output: " + output + " with input: " + item)
         if not("Cannot move that way" in output):
-          found_route = true
+          found_route = True
           previous_move = item 
           potential += item
           
