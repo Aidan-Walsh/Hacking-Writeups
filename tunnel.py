@@ -50,7 +50,7 @@ while True:
       if not(previous_move == "U" and item == "D") or (previous_move == "D" and item == "U") or (previous_move == "L" and item == "R") or (previous_move == "R" and item == "L") or (previous_move == "F" and item == "B") or (previous_move == "B" and item == "F"):
         executable.sendline(item)
         output = executable.readline()
-        if not(output.contains("Cannot move that way")):
+        if not("Cannot move that way" in output):
           previous_move = item 
           potential.append(item)
           print("working with path: " + potential)
