@@ -55,7 +55,7 @@ while True:
           previous_move = item 
           potential += item
           print("working with path: " + potential)
-          if output.contains("break into the vault"):
+          if "break into the vault" in output:
             print("found flag with: " + potential)
             found = True
             break
