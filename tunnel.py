@@ -58,6 +58,7 @@ while True:
       if not(previous_move == "U" and item == "D") or (previous_move == "D" and item == "U") or (previous_move == "L" and item == "R") or (previous_move == "R" and item == "L") or (previous_move == "F" and item == "B") or (previous_move == "B" and item == "F"):
         print("reent here")
         executable.sendline(item) 
+        print("balls")
         output = executable.readline()
         executable.readline()
         output = str(output)
