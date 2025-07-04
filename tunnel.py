@@ -53,7 +53,7 @@ while True:
         output = str(output)
         if not("Cannot move that way" in output):
           previous_move = item 
-          potential.append(item)
+          potential += item
           print("working with path: " + potential)
           if output.contains("break into the vault"):
             print("found flag with: " + potential)
