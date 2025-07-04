@@ -22,6 +22,10 @@ executable = process('./tunnel')
 while True:
   if not(found_route):
     executable = process('./tunnel')
+    first = executable.readline()
+    second = executable.readline
+    print(str(first))
+    print(str(second))
     found_route = False
   if  len(others) != 0 and restarting:
     restarting = False
