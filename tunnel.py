@@ -49,22 +49,22 @@ while True:
       
     for character in potential:
       executable.sendline(character)
-  print("reenter")
+
   for ind in range(len(payload)):
     item = payload[ind]
-    print("here" + item)
+
     if index == -1: 
-      print("2")
+
       if not(previous_move == "U" and item == "D") or (previous_move == "D" and item == "U") or (previous_move == "L" and item == "R") or (previous_move == "R" and item == "L") or (previous_move == "F" and item == "B") or (previous_move == "B" and item == "F"):
-        print("reent here")
+
         executable.sendline(item) 
-        print("balls")
+        
         output = executable.readline()
         output = str(output)
-        print("balls 1" + str(output))
+     
         if "Cannot move that way" in output:
           executable.readline()
-        print("balls 2")
+     
         
         print("output: " + output + " with input: " + item)
         if not("Cannot move that way" in output):
