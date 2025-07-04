@@ -51,6 +51,7 @@ while True:
         executable.sendline(item)
         output = executable.readline()
         output = str(output)
+        print(output)
         if not("Cannot move that way" in output):
           previous_move = item 
           potential += item
