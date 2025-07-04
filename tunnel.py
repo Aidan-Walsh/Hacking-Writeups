@@ -49,6 +49,7 @@ while True:
       
     for character in potential:
       executable.sendline(character)
+  print("reenter")
   for ind in range(len(payload)):
     item = payload[ind]
     if index == -1: 
