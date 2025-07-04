@@ -60,7 +60,7 @@ while True:
         executable.sendline(item) 
         print("balls")
         output = executable.readline()
-        print("balls 1")
+        print("balls 1" + output)
         executable.readline()
         print("balls 2")
         output = str(output)
