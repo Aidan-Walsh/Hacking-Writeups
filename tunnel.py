@@ -18,6 +18,7 @@ restarting = False
 index = -1
 found = False
 found_route = False
+executable = process('./tunnel')
 while True:
   if not(found_route):
     executable = process('./tunnel')
