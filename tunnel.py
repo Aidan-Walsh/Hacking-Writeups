@@ -52,7 +52,7 @@ while True:
         output = executable.readline()
         executable.readline()
         output = str(output)
-        print("output: " + output)
+        print("output: " + output + " with input: " + item)
         if not("Cannot move that way" in output):
           previous_move = item 
           potential += item
