@@ -17,9 +17,13 @@ previous_move = ""
 restarting = False
 index = -1
 found = False
+found_route = False
 while True:
-  executable = process('./tunnel')
+  if not(found_route):
+    executable = process('./tunnel')
+    found_route = False
   if  len(others) != 0 and restarting:
+    restarting = False
     potential = others[len(others)-1]
     # now need to try potential beyond
     last_char = potential[len(potential)-1]
@@ -55,8 +59,10 @@ while True:
         output = str(output)
         print("output: " + output + " with input: " + item)
         if not("Cannot move that way" in output):
+          found_route = true
           previous_move = item 
           potential += item
+          
           print("working with path: " + potential)
           if "break into the vault" in output:
             print("found flag with: " + potential)
@@ -66,6 +72,7 @@ while True:
           
           if item != "B":
             others.append(potential)
+          break
         else: 
           if item == "B":
             restarting = True
