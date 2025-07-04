@@ -60,7 +60,9 @@ while True:
         executable.sendline(item) 
         print("balls")
         output = executable.readline()
+        print("balls 1")
         executable.readline()
+        print("balls 2")
         output = str(output)
         print("output: " + output + " with input: " + item)
         if not("Cannot move that way" in output):
