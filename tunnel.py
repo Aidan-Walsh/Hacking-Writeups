@@ -74,6 +74,10 @@ def update_location():
 # save where we go 
 size = 10
 location = [[[False for _ in range(size)] for _ in range(size)] for _ in range(size)]
+print("location")
+print(location)
+location[0][0][0] = True
+print(location)
 start = [int(size/2),int(size/2),int(size/2)]
 
 payload = ["U","D","L","R","F","B"]
