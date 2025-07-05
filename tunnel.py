@@ -62,7 +62,7 @@ def update_location():
 # repeatedly send lines
 
 # save where we go 
-size = 100
+size = 500
 location = [[[False for _ in range(size)] for _ in range(size)] for _ in range(size)]
 start = [int(size/2),int(size/2),int(size/2)]
 
