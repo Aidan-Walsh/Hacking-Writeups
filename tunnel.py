@@ -93,6 +93,8 @@ first = executable.readline()
 print(first)
 
 while True:
+  print("others")
+  print(others)
   if  len(others) != 0 and restarting:
     first = executable.readline()
     
