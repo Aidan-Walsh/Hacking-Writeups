@@ -129,6 +129,8 @@ while True:
           found_route = True
           previous_move = item 
           potential += item
+          update_position(item)
+          update_location()
           
           
           
