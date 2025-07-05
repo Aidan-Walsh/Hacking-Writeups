@@ -10,30 +10,30 @@ import copy
 def found_cycle(char):
   global start
   global location
-  copy_start = copy.deepcopy(start)
+  x = start[0]
+  y = start[1]
+  z = start[2]
   print("before statistics")
-  print(copy_start)
   if char == "U":
-    copy_start[2] += 1
+    z += 1
   elif char == "D":
-    copy_start[2] -=1 
+    z -=1 
   elif char == "L":
-    copy_start[0] -= 1
+    x -= 1
   elif char == "R":
-    copy_start[0] += 1
+    x += 1
   elif char == "F":
-    copy_start[1] += 1
+    y += 1
   elif char == "B":
-    copy_start[1] -= 1
+    y -= 1
     
-  if location[copy_start[0]][copy_start[1]][copy_start[2]]:
+  if location[x][y][z]:
     print("found cycle")
     
   print("statistics 1: ")
-  print(copy_start)
-  print(location[copy_start[0]][copy_start[1]][copy_start[2]]) 
+  print(location[x][y][z]) 
   
-  return location[copy_start[0]][copy_start[1]][copy_start[2]]
+  return location[x][y][z]
   
 def update_position(char):
   global start
