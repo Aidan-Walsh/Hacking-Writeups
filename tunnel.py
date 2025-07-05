@@ -96,13 +96,14 @@ while True:
   print("others")
   print(len(others))
   if  len(others) != 0 and restarting:
+    executable = process('./tunnel')
     first = executable.readline()
     
     #second = executable.readline()
     print("restarting")
     location = [[[False for _ in range(size)] for _ in range(size)] for _ in range(size)]
     start = [int(size/2),int(size/2),int(size/2)]
-    executable = process('./tunnel')
+    
     restarting = False
     potential = others[len(others)-1]
     # now need to try potential beyond
@@ -172,6 +173,7 @@ while True:
           if item == "B":
             restarting = True
             executable.sendline("Q")
+            
             print("balls")
             
     else:
