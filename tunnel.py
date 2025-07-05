@@ -94,7 +94,7 @@ print(first)
 
 while True:
   print("others")
-  print(others)
+  print(len(others))
   if  len(others) != 0 and restarting:
     first = executable.readline()
     
