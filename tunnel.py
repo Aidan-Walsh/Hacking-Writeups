@@ -90,6 +90,8 @@ found_route = False
 executable = process('./tunnel')
 first = executable.readline()
 second = executable.readline()
+print(first)
+print(second)
 while True:
   if  len(others) != 0 and restarting:
     first = executable.readline()
