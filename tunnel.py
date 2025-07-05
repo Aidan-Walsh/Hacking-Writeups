@@ -149,6 +149,7 @@ while True:
           if item == "B":
             restarting = True
             executable.sendline("Q")
+            print("balls")
     else:
       if index == ind:
         index = -1
