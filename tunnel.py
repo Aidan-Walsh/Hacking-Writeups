@@ -98,7 +98,7 @@ while True:
   if  len(others) != 0 and restarting:
     
     first = executable.readline()
-    
+    print(first)
     #second = executable.readline()
     print("restarting")
     location = [[[False for _ in range(size)] for _ in range(size)] for _ in range(size)]
