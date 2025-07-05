@@ -54,7 +54,7 @@ def update_location():
 # save where we go 
 size = 100
 location = [[[False] * size] * size] * size
-start = [size/2,size/2,size/2]
+start = [int(size/2),int(size/2),int(size/2)]
 
 payload = ["U","D","L","R","F","B"]
 quit = "Q"
