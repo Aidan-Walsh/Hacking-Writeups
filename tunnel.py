@@ -44,14 +44,16 @@ def update_position(char):
   elif char == "B":
     start[1] -= 1
     
-  '''print("statistics: ")
-  print(start)
-  print(location[start[0]][start[1]][start[2]]) '''
+
     
 def update_location():
   global location
   global start
   location[start[0]][start[1]][start[2]] = True
+  
+  print("statistics: ")
+  print(start)
+  print(location[start[0]][start[1]][start[2]]) 
 
 # repeatedly send lines
 
