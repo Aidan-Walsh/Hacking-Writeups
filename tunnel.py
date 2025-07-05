@@ -11,6 +11,8 @@ def found_cycle(char):
   global start
   global location
   copy_start = copy.deepcopy(start)
+  print("before statistics")
+  print(copy_start)
   if char == "U":
     copy_start[2] += 1
   elif char == "D":
