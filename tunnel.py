@@ -26,6 +26,10 @@ def found_cycle(char):
     
   if location[copy_start[0]][copy_start[1]][copy_start[2]]:
     print("found cycle")
+    
+  print("statistics 1: ")
+  print(start)
+  print(location[copy_start[0]][copy_start[1]][copy_start[2]]) 
   
   return location[copy_start[0]][copy_start[1]][copy_start[2]]
   
