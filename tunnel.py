@@ -131,7 +131,7 @@ while True:
       executable.sendline(character)
       out = executable.readline()
       
-      if "break into the vault" in out:
+      if "break into the vault" in str(out):
         print("big win")
      
       update_position(character)
