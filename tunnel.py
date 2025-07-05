@@ -14,6 +14,10 @@ def found_cycle(char):
   y = start[1]
   z = start[2]
   print("before statistics")
+  print(x)
+  print(y)
+  print(z)
+  print(char)
   if char == "U":
     z += 1
   elif char == "D":
@@ -31,6 +35,9 @@ def found_cycle(char):
     print("found cycle")
     
   print("statistics 1: ")
+  print(x)
+  print(y)
+  print(z)
   print(location[x][y][z]) 
   
   return location[x][y][z]
