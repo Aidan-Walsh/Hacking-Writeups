@@ -129,6 +129,8 @@ while True:
       
     for character in potential:
       executable.sendline(character)
+      out = executable.readline()
+      print("out 1: " + str(out))
       update_position(character)
       update_location()
 
