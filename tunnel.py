@@ -33,6 +33,7 @@ def found_cycle(char):
     
   if location[x][y][z]:
     print("found cycle")
+    print(location)
     
   print("statistics 1: ")
   print(x)
@@ -71,7 +72,7 @@ def update_location():
 # repeatedly send lines
 
 # save where we go 
-size = 100
+size = 10
 location = [[[False] * size] * size] * size
 start = [int(size/2),int(size/2),int(size/2)]
 
