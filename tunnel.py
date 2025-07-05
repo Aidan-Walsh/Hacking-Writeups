@@ -27,13 +27,17 @@ def found_cycle(char):
   elif char == "B":
     y -= 1
     
+  returned = location[x][y][z] or (x == 100 or x < 0 or y == 100 or y < 0 or z == 100 or z < 0)
   if location[x][y][z]:
     print("found cycle")
+    
+  if (x == 100 or x < 0 or y == 100 or y < 0 or z == 100 or z < 0):
+    print("at bounds")
     
     
 
   
-  return location[x][y][z]
+  return returned
   
 def update_position(char):
   global start
@@ -62,7 +66,7 @@ def update_location():
 # repeatedly send lines
 
 # save where we go 
-size = 500
+size = 100
 location = [[[False for _ in range(size)] for _ in range(size)] for _ in range(size)]
 start = [int(size/2),int(size/2),int(size/2)]
 
