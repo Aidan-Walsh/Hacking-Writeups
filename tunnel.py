@@ -89,13 +89,14 @@ found = False
 found_route = False
 executable = process('./tunnel')
 first = executable.readline()
-second = executable.readline()
+#second = executable.readline()
 print(first)
-print(second)
+
 while True:
   if  len(others) != 0 and restarting:
     first = executable.readline()
-    second = executable.readline()
+    
+    #second = executable.readline()
     print("restarting")
     location = [[[False for _ in range(size)] for _ in range(size)] for _ in range(size)]
     start = [int(size/2),int(size/2),int(size/2)]
