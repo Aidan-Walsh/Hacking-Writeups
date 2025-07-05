@@ -29,7 +29,7 @@ def found_cycle(char):
     
   if location[x][y][z]:
     print("found cycle")
-    print(location)
+    
     
 
   
