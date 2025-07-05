@@ -99,6 +99,7 @@ while True:
   if  len(others) != 0 and restarting:
     print("restarting")
     location = [[[False for _ in range(size)] for _ in range(size)] for _ in range(size)]
+    start = [int(size/2),int(size/2),int(size/2)]
     executable = process('./tunnel')
     restarting = False
     potential = others[len(others)-1]
