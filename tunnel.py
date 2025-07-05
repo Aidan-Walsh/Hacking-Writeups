@@ -13,11 +13,7 @@ def found_cycle(char):
   x = start[0]
   y = start[1]
   z = start[2]
-  print("before statistics")
-  print(x)
-  print(y)
-  print(z)
-  print(char)
+
   if char == "U":
     z += 1
   elif char == "D":
@@ -35,11 +31,7 @@ def found_cycle(char):
     print("found cycle")
     print(location)
     
-  print("statistics 1: ")
-  print(x)
-  print(y)
-  print(z)
-  print(location[x][y][z]) 
+
   
   return location[x][y][z]
   
@@ -65,9 +57,7 @@ def update_location():
   global start
   location[start[0]][start[1]][start[2]] = True
   
-  print("statistics: ")
-  print(start)
-  print(location[start[0]][start[1]][start[2]]) 
+
 
 # repeatedly send lines
 
@@ -92,8 +82,7 @@ while True:
     location = [[[False for _ in range(size)] for _ in range(size)] for _ in range(size)]
     first = executable.readline()
     second = executable.readline
-    print(str(first))
-    print(str(second))
+
     found_route = False
   if  len(others) != 0 and restarting:
     restarting = False
@@ -165,7 +154,7 @@ while True:
           if item == "B":
             restarting = True
             executable.sendline("Q")
-            print("balls")
+            
     else:
       if index == ind:
         index = -1
