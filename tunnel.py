@@ -90,13 +90,16 @@ found_route = False
 executable = process('./tunnel')
 while True:
   if not(found_route):
-    executable = process('./tunnel')
-    location = [[[False for _ in range(size)] for _ in range(size)] for _ in range(size)]
+    
+    
     first = executable.readline()
     second = executable.readline
 
     found_route = False
   if  len(others) != 0 and restarting:
+    print("restarting")
+    location = [[[False for _ in range(size)] for _ in range(size)] for _ in range(size)]
+    executable = process('./tunnel')
     restarting = False
     potential = others[len(others)-1]
     # now need to try potential beyond
