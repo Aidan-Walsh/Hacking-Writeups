@@ -96,7 +96,7 @@ while True:
   print("others")
   print(len(others))
   if  len(others) != 0 and restarting:
-    executable = process('./tunnel')
+    
     first = executable.readline()
     
     #second = executable.readline()
@@ -175,6 +175,7 @@ while True:
             executable.sendline("Q")
             
             print("balls")
+            executable = process('./tunnel')
             
     else:
       if index == ind:
